@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+</header>
+
+<!-- -------- About Section -------- -->
+<section>
+    <div class="collapsible">About Me</div>
+    <div class="content">
+        <div>
+            <img src="me.jpg" alt="Profile Picture" class="profile-img">
+        </div>
+        <p>Hi! I'm Christian Jay R. Ingking, a beginner web developer learning HTML, CSS, and JavaScript. I,m chill, friendly, and always improving my skills to become a developer in any field someday. Outside coding, I enjoy sports like badminton, basketball, and volleyball, and I also play games like Valorant, Mobile Legends, and Clash of Clans.</p>
+    </div>
+</section>
+
+<!-- -------- Projects Section -------- -->
+<section>
+    <div class="collapsible">My Projects</div>
+    <div class="content">
+        <div class="project-list">
+            <button class="project-btn" data-title="Portfolio Website" data-desc="A modern, responsive Cafe Ordering System built with HTML, CSS, and JavaScript where you can order an item through online." data-link="#" data-image="project_2.png">Project 1</button>
+            <button class="project-btn" data-title="Mobile App Concept" data-desc="A simple Portfolio Project with HTML and CSS" data-link="#" data-image="project_1.png">Project 2</button>
+        </div>
+
+        <div class="project-display" id="project-display">
+            <img class="project-image" id="project-image" src="" alt="Project screenshot" style="display:none;">
+            <h3 class="project-title">Select a project</h3>
+            <p class="project-desc">Click a project button to see its description and link.</p>
+            <a class="project-link" href="#" target="_blank" style="display:none;">Open Project</a>
+        </div>
+
+        <!-- Image modal for full view -->
+        <div class="image-modal" id="imageModal">
+            <div class="image-modal-content">
+                <span class="image-modal-close" id="imageModalClose">&times;</span>
+                <img id="imageModalImg" src="" alt="Full project image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -------- Contact Section -------- -->
+<section>
+    <div class="collapsible">Contact Me</div>
+    <div class="content">
+        <div class="contact-box">
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="contactMsg" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="contactSuccess" style="display:none; margin-top: 15px; padding: 12px; border-radius: 8px; background: rgba(0, 255, 0, 0.1); border: 1px solid rgba(0, 255, 0, 0.3); color: #00ff00;"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 My Portfolio — All Rights Reserved</p>
+</footer>
+
+<!-- LINK THE JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
